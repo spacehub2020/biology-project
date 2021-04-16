@@ -32,48 +32,20 @@ image = Image.open('dna-logo.jpg')
 
 st.image(image, use_column_width=True)
 
-##########################
-#### Selettore Lingua ####
-##########################
-
-option = st.selectbox(
-    'In che lingua preferiresti visionare il sito?',
-    ('Italiano', 'English'))
-
-if option == "Italiano":
-    text1 = "La lingua selezionata è:"
-    description = """
-    # Alla Ricerca dei Nucleotidi (By *II O*)
-
-    Questa applicazione conta la composizione nucleotidica di una composizione di DNA!
-
-    **Curiosità**: Questa applicazione web, è stata sviluppata in Python, utilizzando le seguenti librerie:
-    - Pandas
-    - Streamlit (Libreria principale per la composizione web)
-    - Altair
-
-    ***
-    """
-else:
-    text1 = "The selected language is:"
-    description = """
-    # DNA Nucleotide Counters (By Vincenzo Maritato * I.T.I. E. Barsanti *)
-
-    This app counts the nucleotide composition of a DNA composition!
-
-    **Curiosity**: This web application was developed in Python, using the following libraries:
-    - Pandas
-    - Streamlit (Main library for web composition)
-    - Altair
-
-    ***
-    """
-
 #####################
 
-st.write(text1, option)
+st.write('''
+# Alla Ricerca dei Nucleotidi (By *II O*)
 
-st.write(description)
+Questa applicazione conta la composizione nucleotidica di una composizione di DNA!
+
+**Curiosità**: Questa applicazione web, è stata sviluppata in Python, utilizzando le seguenti librerie:
+- Pandas
+- Streamlit (Libreria principale per la composizione web)
+- Altair
+
+***
+''')
 
 ##########################
 ##### Input Text Box #####
