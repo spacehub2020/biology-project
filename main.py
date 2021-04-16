@@ -43,7 +43,7 @@ option = st.selectbox(
 if option == "Italiano":
     text1 = "La lingua selezionata è:"
     description = """
-    # Alla Ricerca dei Nucleotidi (By Vincenzo Maritato *I.T.I. E. Barsanti*)
+    # Alla Ricerca dei Nucleotidi (By *II O*)
 
     Questa applicazione conta la composizione nucleotidica di una composizione di DNA!
 
@@ -204,6 +204,44 @@ if st.sidebar.button('Esegui Analisi!'):
         st.write('***')
 
 #########################
+######## NOZIONI STORICHE #######
+#########################
+
+st.sidebar.write('***')
+
+st.sidebar.subheader('DNA Nella Storia...')
+
+st.sidebar.markdown('''
+Nonostante la sua scoperta risalga a ormai 65 anni, la celebre doppia elica del **DNA** custodisce ancora molti misteri. Sappiamo, per esempio, che ci sono particolari **simmetrie** all’interno dei singoli filamenti di DNA, ma molto resta da scoprire sulla loro **origine**.
+Un po’ di storia… nel 1944 **[Avery](http://www.dnaftb.org/17/bio.html)** e colleghi avevano dimostrato che il portatore dei caratteri genetici era l'acido desossiribonucleico, ovvero il **[DNA](https://www.scienceforpassion.com/2010/06/il-dna-una-molecola-semplicemente.html)**. Qualche anno più tardi, nel 1952, questi risultati verranno confermati dall'esperimento di **[Alfred Day Hershey e Martha Chase](https://www.nobelprize.org/prizes/medicine/1969/hershey/biographical/)** che convinse definitivamente anche gli scienziati più scettici. Alla fine degli anni '40 un gruppo di ricercatori, guidati dal biochimico austriaco **[Erwin Chargaff](https://www.famousscientists.org/erwin-chargaff/)**, cercò di comprendere meglio le peculiarità del DNA. Quali caratteristiche chimiche permettevano a questa molecola di contenere le informazioni genetiche? 
+Attraverso la cromatografia su carta (una tecnica di separazione delle sostanze) riuscì a comprendere che:
+- La composizione in basi del DNA varia da una specie all'altra. 
+- Molecole di DNA isolate da tessuti diversi della stessa specie hanno la stessa composizione in basi. 
+- La composizione in basi del DNA di una certa specie non si modifica in base all'età, allo stato nutritivo o alle variazioni ambientali. 
+- Inoltre, in tutte le molecole di DNA, indipendentemente dalla specie: Il numero di residui di A è uguale al numero di residui di T Il numero di residui di G è uguale al numero di residui di C 
+- La somma dei residui purinici è uguale alla somma dei residui pirimidinici
+''')
+
+st.sidebar.write('***')
+
+st.sidebar.subheader('Un passo avanti...')
+
+st.sidebar.write('''
+Un passo avanti è stato fatto  da  un gruppo di ricerca italo-australiano che coinvolge l’Università di Milano-Bicocca, l’Università di Sydney e l’Università di Bologna. Pubblicato su *Nature Scientific Reports*, lo [studio](https://www.nature.com/articles/s41598-018-34136-w) presenta per la prima volta un modello matematico in grado di spiegare la particolare ripartizione delle basi all’interno del DNA.
+Un risultato che potrebbe aiutarci a far luce sui processi evolutivi della doppia elica e a spiegare le funzioni ad oggi ancora ignote di molte sue parti.
+''')
+
+st.sidebar.write('***')
+
+st.sidebar.subheader('La nostra idea...')
+
+st.sidebar.write('''
+I bioinformatici stanno riscoprendo oggi le "wheels" letteralmente le “ruote” di Chargaff, Wyatt e altri biochimici. Ne consegue dalla seconda regola di parità di Chargaff (%A = %T, %G = %C per DNA a filamento singolo) che le simmetrie osservate per le due coppie di basi mononucleotidiche complementari, dovrebbero applicarsi anche alle otto coppie di basi dinucleotidiche complementari, in 32 paia di basi trinucleotidiche complementari, ecc... Di qui la nostra idea di realizzare un counting di nucleotidi in grado di dare velocemente il rapporto, la percentuale di basi puriniche o pirimidiniche. In campo diagnostico questo strumento potrebbe consentire l’identificazione di eventuali alterazioni o anomalie quantitative legate al numero di nucleotidi. In un momento cosi complesso, come quello che stiamo vivendo, l’immediata identificazione di variazioni nel numero di nucletidi potrebbe facilitare il lavoro diagnostico.
+''')
+
+st.sidebar.write('***')
+
+#########################
 ######## Feedback #######
 #########################
 
@@ -238,4 +276,3 @@ st.write('''## I.T.I. E. Barsanti Project
 
 **Coder**/**Ideatore**: Maritato Vincenzo
 ''')
-st.write('**Contributori**: Leone Emiliano & Mosti Vincenzo')
